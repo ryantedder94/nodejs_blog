@@ -11,10 +11,6 @@ const blogRoutes = (app) => {
 
   router.get("/search", getSearchPage.searchController);
 
-//   router.post("/search", (req, res) => {
-//     res.send("");
-//   });
-
   return app.use("/", router);
 };
 
