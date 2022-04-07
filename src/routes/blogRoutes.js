@@ -7,6 +7,7 @@ const getDetailsCourses = require("../app/controllers/courseController");
 
 
 const blogRoutes = (app) => {
+
   router.get("/", getHomePage.homeController);
 
   router.get("/news", getNewsPage.newsController);
@@ -19,5 +20,5 @@ const blogRoutes = (app) => {
 };
 
 module.exports = blogRoutes;
-
+// khi m sua bat cu cai gi thi no hien o day
 // cai duong dan /courses/nodejs nay m phai khai bao o day, day t thay m khai bao 4 cai
