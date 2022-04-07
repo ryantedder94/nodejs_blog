@@ -3,10 +3,14 @@ const express = require("express");
 const morgan = require("morgan");
 const { engine } = require("express-handlebars");
 const { urlencoded } = require("express");
+const blogRoutes = require("./routes/blogRoutes");
+const db = require('./config/db')
+
+//Connect to DB
+db.connect();
+
 const app = express();
 const port = 3000;
-
-const blogRoutes = require('./routes/blogRoutes');
 
 app.use(express.static(path.join(__dirname, "public")));
 
